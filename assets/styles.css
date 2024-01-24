@@ -2,12 +2,16 @@
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001A49;
+    --color-title: #000000;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(247, 247, 247);
+    background-image: url('./img/Mapa.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -112,3 +116,60 @@ body {
   border-radius: 32px;
 }
 
+
+
+p{
+  align-items: center;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.gustos{
+  display: grid;
+  gap: 2em;
+  position: absolute;
+  
+}
+
+h1{
+  font-size: 300px;
+  
+}
+
+.questions{
+  text-align: center;
+}
+
+.questions__container{
+  background-color: #d70505;
+  display: grid;
+  gap: 2em;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.questions__padding{
+  background-color: #5e5e5e;
+  padding: 0;
+  transition: padding .2s;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+
+.questions__padding--add{
+  padding-bottom: 30px;
+}
+
+.questions__answer{
+  padding: 0px 30px 3;
+  
+}
+.questions__title{
+  
+  padding: 30px 0 30px;
+}

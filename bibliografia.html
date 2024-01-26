@@ -5,55 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/normalize.css">
-    <title>Bibliografia:</title>
+    <title>Bibliografia</title>
 </head>
-<body>
-    <header class="heros">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">Laboratorio 1 Informatica 6to diversificado.</h2>
-            </div>
-
-            <ul class="nav__link nav__link--menu">
+<body class="">
+    
+    <header class="cambios">
+        <div class="logotipo">
+            <img src="assets/img/Perfil.png" alt="Imagen">
+        </div>
+        <nav>
+            <ul class="nav___links">
+                
                 <li class="nav__items">
                     <a href="/index.html" class="nav__links">Sobre mi</a>
                 </li>
-
                 <li class="nav__items">
-                    <a href="" class="nav__links">Bibliografia</a>
+                    <a href="/bibliografia.html" class="nav__links">Bibliografia</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Kinal</a>
                 </li>
 
-                <li class="nav__items">
-                    <a href="" class="nav__links">Kinal</a>
-                </li>
-
-
+                <img src="" class="nav__close">
             </ul>
         </nav>
+        <a href="/contacto.html" class="btn"><button>Contactame</button></a>
+    </header><br><br>
+    
 
-        <section class="hero__container container">
-            <h1 class="hero__title">En la siguiente pagina se vera mi Bibliografia:</h1>
-            <h2 class="hero__paragraph">Hola mi nombre es: Brandon Alexander Gomez Escobar y en esta ocasion se relacionara con temas que me gusten (Musica,Ajedrez,Futbol,Tenis,Programacion,Competitivo,Torneos,etc).</h2>
-            <a href="https://youtu.be/MXU_FlI5qFE" class="cta">Comienza ahora</a>
-            <div>
-            <img class="foto" src="assets/img/bg.jpeg" alt="">
+    <div class="contencion">
+        <div class="txt">
+            <h1>¿Que espero de este año?</h1>
+            <p>Espero mejorar mis capacidades como programador adquiriendo conocimiento para hacer multiples cosas con codigo, ademas que espero obtener los valores que la fundacion
+                enseña para ser una mejor persona, creo que teniendo esas dos podria aspirar a multiples cosas mas siendo un mejor hijo, hermano, amigo pero sobre todo resaltando como persona, con esto espero
+                 ayudar a quienes lo necesitan cuando alguien no pueda o no sepa como hacer algo.</p>
         </div>
-        </section>
-
         <section>
-            <div>
-                <img src="assets/img/informatica.jpg" alt="">
-            </div>
-            <div class="questions__padding">
-                <h3>agjjasdjasljm</h3>
-            </div>
+        <img  class="imagen" src="assets/img/vista.jpg" alt="" onclick="agrandar(this)">
+        </section>
+    </div>
+
+
+    <div class="contencion">
+        <div class="txt">
+            <h1>Biografia basica:</h1>
+            <p class="questions__show">!Hola me llamo Brandon Goméz soy originario de un Fepartamento llamado Peten es Guatemala .</p><br>
+ 
+            <p class="questions__show">Actualmente me encuentro estudiando Informatica en Kinal voy en 6to grado a punto de terminar y graduarme con el sueño de entrar a la universidad, creo que esta sera una mini
+                  meta en el camino que quiero llevar conociendo a muchas personas y ayudando a los demas en lo que pueda.</p><br>
+
+            <p class="questions__show">Eh seguido esta carrera desde muy pequeño siempre con el ideal de aprender con lo que me apasiona teniendo en mente mis planes a futuro esto lo eh tenido claro desde los 7 años
+                 y aproximadamente 10 años despues me encuentro en kinal tratando de hacer realidad mi sueño.</p>
+        </div>
+        <section>
+        <img  class="imagen" src="assets/img/personal.jpg" alt="" onclick="agrandar(this)">
+        </section>
+    </div>
+
+
+    <div class="contencion">
+        <div class="txt">
+            <h1>Habilidades y capacidades a largo plazo</h1>
+            <p>Espero mejorar mis capacidades como programador adquiriendo conocimiento para hacer multiples cosas con codigo, ademas que espero obtener los valores que la fundacion
+                enseña para ser una mejor persona, creo que teniendo esas dos podria aspirar a multiples cosas mas siendo un mejor hijo, hermano, amigo pero sobre todo resaltando como persona, con esto espero
+                 ayudar a quienes lo necesitan cuando alguien no pueda o no sepa como hacer algo.</p>
+        </div>
+        <section>
+            <img  class="imagen" src="assets/img/Informatica.jpg" alt="" onclick="agrandar(this)">
         </section>
 
-    </header>
+    </div>
+    <script>
+        function agrandar(img) {
+            img.style.width = "30%";
+            img.style.height = "50%";
+            img.style.position = "fixed";
+            img.style.top = "25vh";
+            img.style.left = "70vh";
+            img.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+            img.style.zIndex = "1";
+            img.onclick = function() {
+                restoreSize(img);
+    };
+}
 
+function restoreSize(img) {
+    img.style.width = "";
+    img.style.height = "";
+    img.style.position = "";
+    img.style.top = "";
+    img.style.left = "";
+    img.style.backgroundColor = "";
+    img.style.zIndex = "";
+    img.onclick = function() {
+        agrandar(img);
+    };
+}
 
+    </script>
 
-   
 
 </body>
 </html>

@@ -1,11 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.cambios{
+  background-color: #8bdb09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+.cambios .logotipo {
+  cursor: pointer;
+  
+}
+
+
+.cambios .logotipo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.cambios .logotipo img:hover{
+  transform: scale(1.2);
+}
+
+.cambios .nav___links{
+  list-style: none;
+}
+
+.cambios .nav___links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.cambios .nav___links li:hover{
+  transform: scale(1.2);
+}
+.cambios .nav___links li a:hover{
+  color: #2091F9;
+}
+
+.cambios .nav___links a{
+  font-size: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*boton de pagina principal para contactar*/
+
+.cambios .btn button{
+  font-weight: 700;
+  color: #8bdb09;
+  padding: 9px 25px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+
+.cambios .btn button:hover{
+  background-color: aliceblue;
+  color: #2091F9;
+  transform: scale(1.1);
+}
+/*Parte de contenido de la principal*/
 :root {
     --padding-container: 100px 0;
     --color-title: #000000;
 }
 
-.sobremi {
+body {
     font-family: 'Poppins', sans-serif;
     background-image: url('./img/Mapa.webp');
     background-position: center;
@@ -88,7 +162,7 @@
 }
 
 .hero__container {
-  max-width: 900px;
+  max-width: 800px;
   --padding-container: 0;
   display: grid;
   grid-auto-rows: max-content;
@@ -118,9 +192,7 @@
 
 
 
-p{
-  align-items: center;
-}
+
 
 img{
   width: 300px;
@@ -154,8 +226,6 @@ h1{
 }
 
 .questions__padding{
-  top: 10px;
-  left: 100px;
   background-color: #5e5e5e;
   padding: 0;
   transition: padding .2s;
@@ -176,37 +246,23 @@ h1{
   padding: 30px 0 30px;
 }
 
-
-/* Bibliografia*/
-
-
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: aqua;
+/*Bibliografia*/
+.contencion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0ad3c9;
+  height: 300px;
+  margin: 200px;
+  padding: 200px;
+  border-radius: 20px;
 }
 
-
-.heros::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img/pexels-eberhard-grossgasteiger-691668.jpg');
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-  z-index: -1;
+.txt{
+  margin-right: 50px;
 }
 
-.foto{
-  border-radius: 50%;
-  
-  
-  gap: 800px;
-}
-
-.principal{
-  padding: 100px 0 100px;
-  float: left;
+.imagen{
+  width: 350px;
+  height: 250px;
 }

@@ -1,0 +1,70 @@
+.inicio{
+    width: 100%;
+    height: 300px;
+    background-color: #043c4c;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+.inicio .contenido{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    
+}
+
+.inicio .contenido .p-1{
+    color: #00050a;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.inicio .contenido .p-2{
+    color: #00050a;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-size: 45px;
+}
+
+
+.informacion{
+    width: 90%;
+    height: auto;
+    background: #043c4c;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.informacion .tituloSeccion{
+    color: aliceblue;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #fff8f0 dashed;
+}
+
+.informacion .titulo{
+    color: #fff8f0;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.informacion .infoinforme{
+    color: #000000;
+    font-family: 'Baloo Tamma 2', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+    font-size: 25px;
+}

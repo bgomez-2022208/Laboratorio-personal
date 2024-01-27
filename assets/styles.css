@@ -5,8 +5,233 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
+  
 }
 
+/*Kinal Footer*/
+  .pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+
+  }
+
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+  }
+
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  
+  .pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+  }
+
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+
+  }
+  .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+
+  }
+
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color: #bfa829;
+
+  }
+
+
+/*Kinalito*/
+
+.testimony{
+  
+  border-radius: 25%;
+}
+
+.testimony__container{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 1em;
+  align-items: center;
+}
+
+.testimony__body{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.testimony__body--show{
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.testimony__texts{
+  max-width: 700px;
+}
+
+.testimony__course{
+  display: inline-block;
+  padding: 5px;
+}
+
+.testimony__arrow{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+.heroKinalito {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #000000;
+}
+
+.heroKinalito::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),url('../assets/img/Captura\ web_26-1-2024_18423_www.kinal.org.gt.jpeg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+  
+}
+
+.prueba {
+  font-family: 'Poppins', sans-serif;
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.kinalito .btn button{
+  font-weight: 700;
+  color: rgb(0, 40, 85);
+  padding: 9px 25px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+
+.kinalito .btn button:hover{
+  background-color: aliceblue;
+  color: #2091F9;
+  transform: scale(1.1);
+}
+
+.kinalito{
+  background-color: rgb(0, 40, 85);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.kinalito .logotipo {
+  cursor: pointer;
+  
+}
+.hero__titleKinal {
+  font-size: 8rem;
+  color: #fff;
+}
+
+.kinalito .logotipo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.kinalito .logotipo img:hover{
+  transform: scale(1.2);
+}
+
+.kinalito .nav___links{
+  list-style: none;
+}
+
+.kinalito .nav___links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.kinalito .nav___links li:hover{
+  transform: scale(1.2);
+}
+.kinalito .nav___links li a:hover{
+  color: #2091F9;
+}
+
+.kinalito .nav___links a{
+  font-size: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Principal*/
 .cambios{
   background-color: #8bdb09;
   display: flex;
@@ -15,6 +240,7 @@
   height: 85px;
   padding: 5px 10%;
 }
+
 .cambios .logotipo {
   cursor: pointer;
   
@@ -178,6 +404,7 @@ body {
 
 .hero__paragraph {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .cta {

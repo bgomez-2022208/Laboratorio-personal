@@ -1,2 +1,1 @@
 # Laboratorio-personal
-Me base en un trabajo anterior, me ayudo a repasar el contenido olvidado anteriormente, tambien investigue como hacer algunas cosas para que quede mejor mi pagina web en total trabaje mas de 10 horas con las horas de los laboratorios espero que mi dise;o les gustara debido a que puse mucho esfuerzo haciendola.

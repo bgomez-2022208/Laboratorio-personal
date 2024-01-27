@@ -1,1 +1,2 @@
 # Laboratorio-personal
+utilice este dise;o debido a trabajos anteriores realizados tomandolos en cuenta pude crear estas paginas la verdad es la pagina mas completa que eh creado y estuve indeciso a la hora de creacion debido a que creia que estaba muy simple pero actualmente me gusto el trabajo final.
